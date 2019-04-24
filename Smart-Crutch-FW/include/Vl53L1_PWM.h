@@ -35,7 +35,7 @@ void Vl53L1_PWM::rise()
 
 void Vl53L1_PWM::fall()
 {
-    range = t.read_us() / 1000;
+    range = t.read_us() / 10;
     t.stop();
 }
 
