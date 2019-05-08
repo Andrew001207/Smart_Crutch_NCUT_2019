@@ -1,0 +1,15 @@
+#include <mbed.h>
+
+  DigitalOut m_1 (PA_10, 0);
+  DigitalOut m_2 (PA_11, 0);
+
+
+int main() {
+
+    while(1)
+    {
+        m_1 = !m_1;
+        m_2 = !m_2;
+        wait_ms(1000);
+    }
+}
